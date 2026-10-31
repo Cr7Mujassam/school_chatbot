@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b4e">
+  <meta name="description" content="Tender Hearts International School, Rajendra Nagar, Patna — school information for parents, students and teachers.">
+  <title>Tender Hearts International School | Patna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Tender Hearts home">
+    <span class="brand-mark">TH</span><span><b>TENDER HEARTS</b><small>INTERNATIONAL SCHOOL · PATNA</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+  <nav id="mainNav">
+    <a href="#about">About</a><a href="#academics">Academics</a><a href="#faculty">Faculty</a>
+    <a href="#events">Events</a><a href="#parents">Parents</a><a href="#contact">Contact</a>
+    <a class="nav-cta" href="#admissions">Admissions</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="eyebrow"><span class="dot"></span> LEARN · GROW · SHINE</span>
+    <h1>Big dreams begin<br>with <em>little steps.</em></h1>
+    <p>A caring learning community where curiosity is encouraged, confidence is built, and every child is inspired to do their best.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="#admissions">Explore admissions <span>↗</span></a><a class="btn btn-ghost" href="#about">Discover our school</a></div>
+    <div class="hero-note"><span class="note-icon">✦</span><span><b>A place to learn and belong</b><small>For students, parents and teachers</small></span></div>
+  </div>
+  <div class="hero-art" aria-label="Illustration of a school and children">
+    <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+    <div class="school-illustration">
+      <div class="roof"></div><div class="school-building"><div class="school-sign">TENDER HEARTS</div><div class="windows"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="door"></div></div>
+      <div class="tree tree-left"></div><div class="tree tree-right"></div>
+      <div class="kid kid-one">●</div><div class="kid kid-two">●</div>
+    </div>
+    <div class="floating-card card-top"><span>✦</span><b>Every child matters</b></div>
+    <div class="floating-card card-bottom"><b>Curiosity</b><small>is the start of discovery</small></div>
+  </div>
+</section>
+
+<section class="quick-stats">
+  <div><strong id="statClasses">—</strong><span>Classes</span></div><div><strong id="statTeachers">—</strong><span>Teachers</span></div><div><strong id="statStudents">—</strong><span>Students</span></div><div><strong id="statYear">—</strong><span>Established</span></div>
+</section>
+
+<section class="section about-section" id="about">
+  <div class="section-kicker">WELCOME TO OUR SCHOOL</div>
+  <div class="section-heading"><h2>More than a school.<br><em>A foundation for life.</em></h2><p id="schoolIntro">We believe education should help children think independently, act kindly and discover what they are capable of.</p></div>
+  <div class="about-grid">
+    <div class="about-photo"><div class="photo-placeholder"><span>✿</span><b>Growing minds.<br>Bright futures.</b><small>Replace this panel with a real school photograph.</small></div><div class="photo-caption">TENDER HEARTS INTERNATIONAL SCHOOL <span>✦</span></div></div>
+    <div class="about-copy"><div class="value-row"><span>01</span><div><h3>Learning with purpose</h3><p>Build strong foundations through engaging lessons, practice and exploration.</p></div></div><div class="value-row"><span>02</span><div><h3>A safe, supportive environment</h3><p>Encourage respect, responsibility and positive relationships across our school community.</p></div></div><div class="value-row"><span>03</span><div><h3>Every talent has a place</h3><p>Make room for creativity, sports, teamwork and individual growth.</p></div></div>
+      <a class="text-link" href="#academics">Explore academics <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section academics-section" id="academics">
+  <div class="section-kicker">ACADEMIC LIFE</div><div class="section-heading"><h2>Strong roots.<br><em>Endless possibilities.</em></h2><p>Explore the classes and learning information. The sample details can be updated in <code>data.js</code>.</p></div>
+  <div class="academic-cards" id="classCards"></div>
+</section>
+
+<section class="section faculty-section" id="faculty">
+  <div class="section-kicker">OUR PEOPLE</div><div class="section-heading"><h2>Great teachers make<br><em>great possibilities.</em></h2><p>Meet the school leadership and teaching team. Add verified names and qualifications before publishing.</p></div>
+  <div class="faculty-grid" id="facultyGrid"></div>
+</section>
+
+<section class="admissions-band" id="admissions"><div><span class="section-kicker light">TAKE THE NEXT STEP</span><h2>Let's make their next chapter<br><em>a bright one.</em></h2><p>For admission enquiries, connect with the school office.</p></div><a class="btn btn-light" href="#contact">Enquire about admission <span>↗</span></a></section>
+
+<section class="section events-section" id="events">
+  <div class="section-kicker">WHAT'S HAPPENING</div><div class="section-heading"><h2>School days are full<br><em>of memorable moments.</em></h2><p>School events, notices and examination schedules in one place.</p></div>
+  <div class="events-layout"><div><h3 class="list-title">Upcoming events</h3><div id="eventList" class="notice-list"></div></div><div><h3 class="list-title">Examination schedule</h3><div id="examList" class="notice-list"></div></div></div>
+</section>
+
+<section class="section parents-section" id="parents">
+  <div class="section-kicker">SCHOOL COMMUNITY</div><div class="section-heading"><h2>One school.<br><em>One connected community.</em></h2><p>Helpful information for parents and teachers. These are informational demo panels, not live accounts.</p></div>
+  <div class="community-grid">
+    <article class="community-card"><div class="community-icon">⌂</div><h3>Parent corner</h3><p>Find school timings, transport information, notices and contact details.</p><ul><li>School timing and calendar</li><li>Exam dates and events</li><li>Office contact information</li></ul><a href="#contact" class="text-link">Contact the school →</a></article>
+    <article class="community-card"><div class="community-icon">✎</div><h3>Teacher corner</h3><p>A quick reference area for teaching staff and school updates.</p><ul><li>Faculty and subject information</li><li>Academic calendar</li><li>School announcements</li></ul><a href="#faculty" class="text-link">View faculty →</a></article>
+    <article class="community-card"><div class="community-icon">🚌</div><h3>Transport & timings</h3><p id="transportInfo">Transport and daily schedule information will be published here.</p><ul><li id="schoolTiming">School timing: To be confirmed</li><li id="transportTiming">Transport: To be confirmed</li></ul><a href="#contact" class="text-link">Ask a question →</a></article>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact">
+  <div class="contact-panel"><div><div class="section-kicker light">GET IN TOUCH</div><h2>We'd love to<br><em>hear from you.</em></h2><p>For admissions, school information or general enquiries, please contact the school office.</p><div class="contact-detail"><span>⌖</span><div><small>VISIT US</small><b id="schoolAddress">Rajendra Nagar, Patna, Bihar, India</b></div></div><div class="contact-detail"><span>☎</span><div><small>CALL US</small><b id="schoolPhone">Phone number to be added</b></div></div><div class="contact-detail"><span>✉</span><div><small>EMAIL</small><b id="schoolEmail">Email address to be added</b></div></div></div>
+    <form id="enquiryForm" class="enquiry-form"><h3>Send an enquiry</h3><p>This demo form shows a local confirmation only. Connect a backend or form service to receive submissions.</p><label>Your name<input required name="name" placeholder="Enter your name"></label><label>Email or phone<input required name="contact" placeholder="How can we reach you?"></label><label>I'm enquiring about<select name="topic"><option>Admission</option><option>School information</option><option>Transport</option><option>Other</option></select></label><label>Message<textarea name="message" rows="3" placeholder="Write your message"></textarea></label><button class="btn btn-primary" type="submit">Submit enquiry <span>↗</span></button><div id="formMessage" role="status"></div></form>
+  </div>
+</section>
+</main>
+
+<footer><a class="brand footer-brand" href="#home"><span class="brand-mark">TH</span><span><b>TENDER HEARTS</b><small>INTERNATIONAL SCHOOL · PATNA</small></span></a><p>Learning today. Leading tomorrow.</p><small>© <span id="currentYear"></span> Tender Hearts International School. Demo website for science exhibition.</small></footer>
+
+<button class="chat-launcher" id="chatLauncher" aria-label="Open school assistant"><span>✦</span> Ask School Assistant <b>●</b></button>
+<aside class="chat-panel" id="chatPanel" aria-label="School rule-based chatbot" aria-hidden="true">
+  <div class="chat-head"><div class="bot-avatar">TH</div><div><b>School Assistant</b><small><span class="online-dot"></span> Rule-based demo chatbot</small></div><button id="chatClose" aria-label="Close chatbot">×</button></div>
+  <div class="chat-messages" id="chatMessages"><div class="message bot">Hello! 👋 I'm the Tender Hearts School Assistant. Ask me about admissions, timings, classes, teachers, events, exams, transport or contact details.</div><div class="suggestions"><button data-question="How can I apply for admission?">Admissions</button><button data-question="What are the school timings?">School timings</button><button data-question="How can I contact the school?">Contact</button></div></div>
+  <form id="chatForm" class="chat-input"><input id="chatInput" autocomplete="off" placeholder="Type your question..." aria-label="Type your question"><button type="submit" aria-label="Send message">➤</button></form>
+  <div class="chat-foot">Answers are based on school information entered in this demo.</div>
+</aside>
+<script src="data.js"></script><script src="script.js"></script>
+</body></html>
